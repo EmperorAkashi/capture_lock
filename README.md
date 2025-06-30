@@ -1,4 +1,4 @@
-# capture_lock: Modular Visual Odometry Research Platform
+# capture lock: Modular Visual Odometry Research Platform
 
 This repository contains a research-oriented visual odometry (VO) platform, built on top of COLMAP's geometric core, and designed to support modular substitution of key VO components. Our goal is to enable fast prototyping and benchmarking of **advanced algebraic solvers** — such as [DRaM-LHM], which is included as a case study.
 
