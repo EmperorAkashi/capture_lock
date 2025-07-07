@@ -11,6 +11,12 @@ Originally developed at the **Flatiron Institute**, this system is meant to prov
 ---
 
 ## Architecture
+- **`workspace`** — Coordinates the VO pipeline and allows component-wise benchmarking.
+- **`pnp/`** — Includes point sampling, synthetic pair generation, and scripts for PnP evaluation.
+- **`estimate/`** — Contains all implemented geometric estimators. New methods can be added easily.
+- **`calib_loader/`** — Provides dataset-specific calibration loading. Supports plug-and-play dataset handling.
+
+This layout makes it easy to replace individual modules (e.g., PnP solver or feature backend) for targeted testing or integration into larger SLAM systems.
 
 
 
