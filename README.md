@@ -18,16 +18,22 @@ Originally developed at the **Flatiron Institute**, this system is meant to prov
 
 This layout makes it easy to replace individual modules (e.g., PnP solver or feature backend) for targeted testing or integration into larger SLAM systems.
 
-## Get Started
-This system is designed to run inside a Docker container for reproducibility. We use the prebuilt image cyidocker/colmap:v04.
+## 🚀 Getting Started
 
-1. Launch the Docker container
-docker run -it \
-  -v /your/path/to/capture_lock/:/tmp1 \
-  -v /your/path/to/datasets/:/tmp3 \
-  --ipc=host --shm-size=16g \
-  -p 8096:8096 \
-  --rm cyidocker/colmap:v04 /bin/bash
+This system is designed to run inside a Docker container for reproducibility. We use the prebuilt image `cyidocker/colmap:v04`.
+
+1. **Launch the Docker container**
+
+   Mount your local codebase and datasets folder:
+
+   ```bash
+   docker run -it \
+     -v /your/path/to/capture_lock/:/tmp1 \
+     -v /your/path/to/datasets/:/tmp3 \
+     --ipc=host --shm-size=16g \
+     -p 8096:8096 \
+     --rm cyidocker/colmap:v04 /bin/bash
+
 
 
 
