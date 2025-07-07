@@ -25,14 +25,21 @@ This system is designed to run inside a Docker container for reproducibility. We
 1. **Launch the Docker container**
 
    Mount your local codebase and datasets folder:
-
-   ```bash
-   docker run -it \
+   
+   `docker run -it \
      -v /your/path/to/capture_lock/:/tmp1 \
      -v /your/path/to/datasets/:/tmp3 \
      --ipc=host --shm-size=16g \
      -p 8096:8096 \
-     --rm cyidocker/colmap:v04 /bin/bash
+     --rm cyidocker/colmap:v04 /bin/bash`
+2. **Build the project inside the container**
+   `cd /tmp1/build`
+    make -j32`
+3. **Run PnP Experiments**
+   `cd /workspace/pnp
+   ./pnp <data_generator_option> <method_option> <ransac_option>`
+
+
 
 
 
