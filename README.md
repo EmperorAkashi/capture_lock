@@ -20,7 +20,7 @@ This layout makes it easy to replace individual modules (e.g., PnP solver or fea
 
 ## 🚀 Getting Started
 
-This system is designed to run inside a Docker container for reproducibility. We use the prebuilt image `cyidocker/colmap:v04`.
+This system is designed to run inside a Docker container for reproducibility. We use the prebuilt image `cyidocker/colmap:v02`.
 
 1. **Launch the Docker container**
 
@@ -31,7 +31,7 @@ This system is designed to run inside a Docker container for reproducibility. We
      -v /your/path/to/datasets/:/tmp3 \
      --ipc=host --shm-size=16g \
      -p 8096:8096 \
-     --rm cyidocker/colmap:v04 /bin/bash`
+     --rm cyidocker/colmap:v02 /bin/bash`
 2. **Build the project inside the container**
    `cd /tmp1/build
     make -j32`
