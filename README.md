@@ -33,11 +33,14 @@ This system is designed to run inside a Docker container for reproducibility. We
      -p 8096:8096 \
      --rm cyidocker/colmap:v02 /bin/bash`
 2. **Build the project inside the container**
-   `cd /tmp1/build
-    make -j32`
+   ```bash
+      cd /tmp1/build
+      make -j32
+   ```
+
 3. **Run PnP Experiments**
-   `cd /workspace/pnp
-   ./pnp <data_generator_option> <method_option> <ransac_option>`
+   ```cd /workspace/pnp
+   ./pnp <data_generator_option> <method_option> <ransac_option>```
 
 
 
