@@ -52,9 +52,10 @@ This project builds on the foundational theory of adjugate quaternions:
 We gratefully acknowledge the open-source contributions used in our system:
 - UPnP and DLS: Implemented via [[OpenCV]](https://github.com/opencv/opencv/tree/4.x/modules/calib3d/src)
 - EPnP: From [[COLMAP]](https://github.com/colmap/colmap/blob/main/src/colmap/estimators/absolute_pose.cc)
-- SQPnP: [[Original]] author’s implementation(https://github.com/terzakig/sqpnp.git)
-- LHM: Rewritten from a [[C version]] into customized C++ code (https://github.com/imbinwang/posest.git)
-- REPPnP: [[Open-source]] C++ implementation (https://github.com/pascalenderli/REPPnP.git)
+- SQPnP: [[Original author’s implementation]](https://github.com/terzakig/sqpnp.git)
+- LHM: Rewritten from a [[C version]](https://github.com/imbinwang/posest.git) into customized C++ code
+- REPPnP: [[Open-source C++ implementation]] (https://github.com/pascalenderli/REPPnP.git)
+
 We sincerely thank the authors and maintainers of these implementations for their contributions to the research community.
 
 
