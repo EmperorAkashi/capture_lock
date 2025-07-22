@@ -39,8 +39,9 @@ This system is designed to run inside a Docker container for reproducibility. We
    ```
 
 3. **Run PnP Experiments**
-   ```cd /workspace/pnp
-   ./pnp <data_generator_option> <method_option> <ransac_option>
+   ```bash
+      cd /workspace/pnp
+      ./pnp <data_generator_option> <method_option> <ransac_option>
    ```
 
 
