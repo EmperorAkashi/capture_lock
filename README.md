@@ -43,6 +43,12 @@ This system is designed to run inside a Docker container for reproducibility. We
       cd /workspace/pnp
       ./pnp [data_generator_option] [method_option] [ransac_option]
    ```
+## **Related Publications and Acknowledgements**
+> **Exploring the adjugate matrix approach to quaternion pose extraction**  
+> Andrew Hanson, and Sonya Hanson  
+> Arxiv (https://arxiv.org/abs/2205.09116)
+
+
 
 
 
