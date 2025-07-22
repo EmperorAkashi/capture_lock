@@ -26,12 +26,14 @@ This system is designed to run inside a Docker container for reproducibility. We
 
    Mount your local codebase and datasets folder:
    
-   `docker run -it \
+   ```bash
+   docker run -it \
      -v /your/path/to/capture_lock/:/tmp1 \
      -v /your/path/to/datasets/:/tmp3 \
      --ipc=host --shm-size=16g \
      -p 8096:8096 \
-     --rm cyidocker/colmap:v02 /bin/bash`
+     --rm cyidocker/colmap:v02 /bin/bash
+   ```
 2. **Build the project inside the container**
    ```bash
       cd /tmp1/build
