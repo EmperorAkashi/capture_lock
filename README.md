@@ -44,9 +44,19 @@ This system is designed to run inside a Docker container for reproducibility. We
       ./pnp [data_generator_option] [method_option] [ransac_option]
    ```
 ## **Related Publications and Acknowledgements**
+This project builds on the foundational theory of adjugate quaternions:
 > **Exploring the adjugate matrix approach to quaternion pose extraction**  
 > Andrew Hanson, and Sonya Hanson  
 > Arxiv (https://arxiv.org/abs/2205.09116)
+
+We gratefully acknowledge the open-source contributions used in our system:
+-UPnP and DLS: Implemented via [[OpenCV]](https://github.com/opencv/opencv/tree/4.x/modules/calib3d/src)
+-EPnP: From COLMAP
+-SQPnP: Original author’s implementation (replace with actual link if available)
+-LHM: Rewritten from a C version into customized C++ code (link to original if possible)
+-REPPnP: Open-source C++ implementation from GitHub (insert actual link)
+We sincerely thank the authors and maintainers of these implementations for their contributions to the research community.
+
 
 
 
